@@ -1,5 +1,3 @@
-
-
 pub fn merge(nums1: &mut Vec<i32>, m: usize, nums2: &Vec<i32>, n: usize) {
     let (mut i, mut j, mut k) = (m as isize - 1, n as isize - 1, (m + n) as isize - 1);
 
