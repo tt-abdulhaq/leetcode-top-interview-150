@@ -1,9 +1,11 @@
 mod  array_string;
 
-use array_string::{majority_element::majority_element};
+use array_string::{majority_element::majority_element, rotate_array::rotate};
 
 fn main() {
-    let nums = vec![2, 2, 1, 1, 1, 2, 2];
-    let majority = majority_element(nums);
-    println!("The majority element is {}", majority);
+    let mut nums = vec![1, 2, 3, 4, 5, 6, 7];
+    println!("{:?}", nums);
+    let k = 3;
+    rotate(&mut nums, k);
+    
 }
