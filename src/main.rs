@@ -1,11 +1,11 @@
 mod  array_string;
 
-use array_string::{majority_element::majority_element, rotate_array::rotate};
+use array_string::jump_game::can_jump;
 
 fn main() {
-    let mut nums = vec![1, 2, 3, 4, 5, 6, 7];
+    let mut nums = vec![3,2,1,0,4];
     println!("{:?}", nums);
-    let k = 3;
-    rotate(&mut nums, k);
+    let a = can_jump(nums);
+    println!("{}-->", a);
     
 }
